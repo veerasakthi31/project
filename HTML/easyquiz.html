@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/easyquiz.css">
+	
+</head>
+<body>
+    
+    <h1><button id="reset-button" onclick="newquiz()">start a new quiz</button></h1>
+    <button class="home-btn"><a href="home.html">Back to home page</a></button>
+	
+        <div class="container">
+            <div class="reset"><h2>Press restart if you want to do the quiz again</h2><button class="restart-btn"><a href ="easyquiz.html" class="restart-btn"> restart</a></button></div>
+            
+                <div class="quiz-container">
+                    <p id="question" class="question"></p>
+                    <form class="options">
+                        <label >
+                            <input type="radio" name="answer" value="a" />
+                            <span id="optionA"></span>
+                        </label>
+                        <br><br>
+                        <label>
+                            <input type="radio" name="answer" value="b" />
+                            <span id="optionB"></span>
+                        </label>
+                        <br><br>
+                        <label>
+                            <input type="radio" name="answer" value="c" />
+                            <span id="optionC"></span>
+                        </label>
+                        <br><br>
+                        <button type="button" class="btn"  onclick="nextQuestion()">Next</button>
+                    
+                        <div class="totalscore-container">
+                            <div class="totalscore"><span class="total-score" >0</span>
+                    
+                        </div>
+                       <div class="history-container"><ul id="score-history"></ul></div>
+                    
+                    </form>
+                </div>
+        </div>
+
+	<script src="/JS/easyquiz.js">
+		
+	</script>
+</body>
+</html>
+

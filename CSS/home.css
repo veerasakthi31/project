@@ -1,0 +1,132 @@
+body{
+    background-image: url(https://images.pexels.com/photos/3991970/pexels-photo-3991970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 3.5;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+.topnav {
+    overflow: hidden; 
+  }
+  
+  .topnav a {
+  float: right;
+    color: #f2f2f2;
+    text-align: center;
+    margin:15px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+  }
+  
+  .topnav a:hover {
+    
+    color:rgb(40, 40, 58);
+  }
+  .logo{
+    width:70px;
+    height:50px;
+   
+  }
+ .logo{
+    color:antiquewhite;
+    font-weight: bold;
+    position: absolute;
+
+   
+ }
+ 
+ 
+
+  
+.box{
+   
+    width:500px;
+    height:400px;
+    margin-left: 400px;
+    margin-top: 80px;
+    background: #B8E1FC;
+   opacity: 0.7;
+    box-shadow: 10px 10px 54px -5px darkblue;
+    border-radius: 15px;
+    padding: 25px;
+    color: black;
+    
+}
+.box:hover{
+    scale: 1.05;
+    transition-duration: 0.5s;
+}
+
+.content{
+    margin-top: -45px;
+    text-align: center;
+    line-height: 1.5;
+    font-size: x-large;
+    font-weight: lighter;
+}
+   
+  .heading{
+    margin-top: -10px;
+  }
+.nav{
+    border:1px solid black;
+height:100px;
+width:100%;
+margin-top: -2px;
+margin-left: -3px;
+background-color: darkcyan;
+
+}
+.dashboard{
+    position: absolute;
+    margin-top: -70px;
+    margin-left: 55px;
+    font-size: xx-large;
+    color: #eeeeee;
+    font-weight: bolder;
+}
+.icon{
+    cursor: pointer;
+}
+.menu li{
+    list-style: none;
+    background-color:bisque;
+width:200px;
+height:80px;
+color: #eeeeee;
+margin-left:-43px;
+margin-top: -16px;
+font-size: large;
+
+padding: 0 0 0 85px;
+}
+.menu li:hover{
+    background-color: gray;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+.menu{
+    position: absolute;
+   
+    display: none;
+   
+  
+    
+}
+.menu-item li{
+    background-color: gray;
+width:200px;
+}
+
+.menuicon{
+    margin-left:-50px;
+    color: black;
+    padding: 0 45px 0 0;
+}

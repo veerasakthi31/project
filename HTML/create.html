@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/create.css" />
+    <script
+    src="https://kit.fontawesome.com/0d760670bf.js"
+    crossorigin="anonymous"
+  ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="topnav">
+      <img src="/images/icons8-bee-65.png" alt="" />
+      <span class="logo">QUIZZBEE</span>
+      <a class="active" href="#home">Contact us</a>
+      <a href="#news">About</a>
+      <a href="#contact">My Quizzes</a>
+      <a href="quiz.html">Home</a>
+    </div>
+    <div class="container">
+      <div class="box">
+        <form action="register.html" onsubmit="return validateForm()">
+          <section>
+            <h1>CREATE NEW ACCOUNT</h1>
+
+            <div>
+              <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+              <input
+                class="textbox"
+                id="email"
+                type="text"
+                placeholder="Email"
+              />
+            </div>
+
+            <div class="pass">
+              <span class="icon">
+                <i class="fa-sharp fa-solid fa-lock"></i>
+              </span>
+              <input
+                class="textbox"
+                id="password"
+                type="password"
+                placeholder="Password"
+              />
+            </div>
+
+            <div class="pass">
+              <span class="icon">
+                <i class="fa-sharp fa-solid fa-lock"></i>
+              </span>
+              <input
+                class="textbox"
+                id="retype password"
+                type="password"
+                placeholder="Retype Password"
+              />
+            </div>
+            <div>
+              <span class="icon">
+                <i class="fa-solid fa-user"></i>
+              </span>
+              <input
+                class="firstname"
+                id="firstname"
+                type="text"
+                placeholder="First Name"
+              />
+            </div>
+            <div>
+              
+              </span>
+              <input
+                class="lastname"
+                id="lastname"
+                type="text"
+                placeholder="Last Name"
+              />
+            </div>
+            <div class="gender">
+              <div class="male">
+                <input type="radio" id="male" name="gender" />
+
+                <label for="male">Male</label>
+              </div>
+              <div class="female">
+                <input type="radio" id="female" name="gender" />
+                <label for="female">Female</label>
+              </div>
+            </div>
+            <div class="country">
+              <select class="dropdown" name="" id="country">
+                <option value="select">Select a country</option>
+                <option value="india">India</option>
+                <option value="italy">Italy</option>
+                <option value="argentina">Argentina</option>
+                <option value="others">others</option>
+              </select>
+            </div>
+            <div class="terms">
+              <input type="checkbox" id="terms" />
+              <label for="terms">I agree with terms and conditions</label>
+            </div>
+
+            <div>
+              <button class="register" type="submit">register</button>
+            </div>
+          </section>
+        </form>
+      </div>
+    </div>
+    <script src="/JS/create.js"></script>
+  </body>
+</html>

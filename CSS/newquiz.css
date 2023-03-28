@@ -1,0 +1,224 @@
+body{
+    background-image: url(https://images.pexels.com/photos/3991970/pexels-photo-3991970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 3.5;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+
+  
+  .user {
+  float: right;
+    color: #f2f2f2;
+    text-align: center;
+    margin:15px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  
+  .user-icon{
+    position: absolute;
+    color:black;
+    font-size: 40px;
+margin-left:-50px;
+margin-top: -32px;
+   
+
+  }
+  .logo{
+    width:70px;
+    height:50px;
+   
+  }
+ .logo{
+    color:antiquewhite;
+    font-weight: bold;
+    position: absolute;
+
+   
+ }
+   
+.nav{
+    border:1px solid black;
+height:100px;
+width:100%;
+margin-top: -2px;
+margin-left: -3px;
+background-color: darkcyan;
+
+}
+.dashboard{
+   position:absolute;
+    margin-top: -70px;
+    margin-left: 55px;
+    font-size: xx-large;
+    color: #eeeeee;
+    font-weight: bolder;
+    
+}
+.icon{
+    cursor: pointer;
+}
+
+.menu li{
+    list-style: none;
+    background-color:blanchedalmond;
+width:200px;
+height:80px;
+color: #eeeeee;
+margin-left:-43px;
+margin-top: -15px;
+font-size: large;
+
+padding: 0 0 0 85px;
+}
+.menu li:hover{
+    background-color: gray;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+.menu{
+    position: absolute;
+   
+    display: none;
+    
+  
+    
+}
+.menu-item li{
+    background-color: gray;
+    
+width:200px;
+}
+
+.menuicon{
+    margin-left:-50px;
+    color: black;
+    padding: 0 45px 0 0;
+}
+.heading{
+    text-align: center;
+    text-shadow: -2px 2px white;
+    
+}
+.easy{
+background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuq2Nw-khxVdzp-j_uk8oEyk2x6kqemK-vv5si9oULpw&usqp=CAU&ec=48665698);
+background-repeat: no-repeat;
+background-size: cover;
+    width:350px;
+    height:300px;
+    margin-top: 54px;
+    margin-left: 90px;
+    text-align: center;
+   box-shadow: 10px 10px 84px -5px darkblue;
+   border-radius: 15px;
+   position: relative;
+   animation: myfirst 1.2s ;
+    animation-direction: alternate;
+
+  
+}
+.easy:hover{
+    scale:1.1;
+    transition-duration: 0.7s;
+}
+.medium{
+    background-image: url(https://t4.ftcdn.net/jpg/01/79/43/11/240_F_179431120_xhJ3GQj1Nm6XOGsps6FrL3C1WdGdyCXm.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:350px;
+    color: #eeeeee;
+    height:300px;
+    position: absolute;
+    box-shadow: 10px 10px 74px -5px darkblue;
+ margin-left: 500px;
+ margin-top: -300px;
+ text-align: center;
+ border-radius: 15px;
+ animation: fist 0.6s ;
+ animation-direction: reverse ;
+
+
+
+}
+.medium:hover{
+    scale:1.1;
+    transition-duration: 0.7s;
+}
+.hard{
+    background-image: url(https://ninaamir.com/wp-content/uploads/2015/06/26236870_s.jpg);
+    width:350px;
+    height:300px;
+    position: absolute;
+    box-shadow: 10px 10px 64px -5px darkblue;
+    margin-left: 900px;
+ margin-top: -300px;
+    text-align: center;
+    border-radius: 15px;
+   
+    animation: first 1.2s ;
+    animation-direction: alternate;
+    
+   
+    
+}
+.hard:hover{
+    scale:1.1;
+    transition-duration: 0.7s;
+}
+.levels{
+    font-size: xx-large;
+    margin-top: 5px;
+}
+button{
+    width:150px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: black;  
+  
+   box-shadow: 10px 10px 54px -5px white;
+    
+    
+
+    margin-top: 80px;
+}
+
+button:hover{
+    background-color: gray;
+}
+.attempt-btn{
+    color: white;
+    font-weight:900;
+
+
+    
+}
+
+
+ 
+
+  @keyframes myfirst {
+    0%  {right: 200px; }
+    100%   {right: 0px;}
+  }
+  @keyframes first {
+    0%   {left: 200px;}
+    100%  {left: 0px; }
+  }
+@keyframes fist{
+    0% {scale:1}
+    100%{scale:0}
+}
+
+
+
+
+

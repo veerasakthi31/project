@@ -1,0 +1,96 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>options</title>
+	<link rel="stylesheet" href="/CSS/adminques.css">
+    <script
+      src="https://kit.fontawesome.com/0d760670bf.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <div class="nav">
+        <div class="topnav">
+          <img src="/images/icons8-bee-65.png" alt="" />
+          
+          <span class="logo">QUIZZBEE </span>
+          <div class="dashboard">
+              <span>Dashboard</span>
+              <span class="icon"><i class="fa-solid fa-bars"></i></span>
+          </div>
+          <a class="active" href="#home">Contact us</a>
+          <a href="#news">About</a>
+          <a href="#contact">My Quizzes</a>
+          <a href="quiz.html">Home</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <div >
+                    <li ><span class="menuicon "><i class="fa-solid fa-house"></i></span><a href="home.html" >
+                        Home</a></li>
+                </div>
+                
+                <li> <span class="menuicon"><i class="fa-solid fa-file-circle-plus"></i>
+                </span><a href="newquiz.html">Quizzes</a></li>
+                
+                <li><span class="menuicon">
+                    <i class="fa-solid fa-book"></i>
+                    
+                </span><a href="historypage.html">History</a></li>
+                <div class="menu-item">
+                    <li><span class="menuicon">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                    </span><a href="">Create new quiz</a></li>
+                </div>
+            </ul>
+        </div>
+    </div>
+	<h1>CREATE NEW QUESTIONS</h1>
+	
+		<div class="input-container">
+            <label  class="dropdown"for="category">Choose a category:</label>
+                <select id="category" name="category">
+                  <option value="easy">EASY</option>
+                  <option value="medium">MEDIUM</option>
+                  <option value="hard">HARD</option>
+                  
+                </select>
+            <span>
+                <label for="question">Enter question</label>
+                <input type="text" id="question" name="question">
+          
+            <span>
+                <label for="option">Enter options</label>
+                <input type="text" id="option" name="option">
+            </span>
+                    <span>
+                        <label for="answer">Enter answer</label>
+                                    <input type="text" id="answer" name="answer">
+                    </span>
+            <button type="button" onclick="addQues()">Add question</button>
+            <button class="post_btn"><a href="post.html" class="post_link">POST QUESTIONS</a></button>
+        </div>
+
+	<table id="questions">
+		<thead>
+			<tr>
+				<th>QUESTION</th>
+				<th>OPTIONS</th>
+                <th>ANSWER</th>
+
+			</tr>
+		</thead>
+		<tbody>
+			<!-- rows will be added -->
+		</tbody>
+
+	</table>
+   
+	<script src="/JS/adminques.js"></script>
+    
+</body>
+</html>

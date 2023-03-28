@@ -1,0 +1,148 @@
+body{
+    background-image: url(https://img.freepik.com/free-vector/halftone-background-with-circles_23-2148907689.jpg?w=740&t=st=1678969950~exp=1678970550~hmac=2dcb0a5107a3fb0e6c958e72626dac6b80a483dba739950c56893af2939a6c1e);
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 3.5;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.welcomepage{
+   
+  
+    margin-left: 400px;
+    margin-top: 100px;
+    
+    color: antiquewhite;
+    text-align: center;
+    
+
+    
+} 
+ .box{
+    
+      width:500px;
+    height: 450px;
+    box-shadow: 10px 10px 54px -5px violet;
+    
+
+} 
+ .box:hover{
+    transform: scale(1.1);
+    transition-duration: 0.7s;
+}
+
+
+.btn{
+    width:150px;
+    height:50px;
+    border-radius: 15px;
+    background-color: palevioletred;
+    
+}
+.btn:hover{
+    background-color:blueviolet;
+}
+.register_btn{
+    color: aliceblue;
+    text-decoration: none;/*for line below the word*/
+    
+    
+} 
+.register_btn:hover{
+    color:palegreen
+}
+.login_btn{
+    width:60px;
+    height:30px;
+    background-color: bisque;
+    border-radius: 5px;
+}
+.login_btn:hover{
+    border:3px solid blueviolet;
+    background-color: white;
+}
+
+
+  .topnav a {
+  float: right;
+    color: #f2f2f2;
+    text-align: center;
+    margin:15px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+  }
+  
+  .topnav a:hover {
+    
+    color:palevioletred
+  }
+  .logo{
+    width:70px;
+    height:50px;
+   
+  }
+ .logo{
+    color:antiquewhite;
+    font-weight: bold;
+    position: absolute;
+
+   
+ }
+ /* forms */
+ form {
+    text-align: center;
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  }
+  .textbox {
+    padding: 10px 10px 10px 30px;
+    
+    width: 200px;
+    border: 2px solid #ced4da;
+    border-radius: 5px;
+  }
+  input {
+    margin-bottom: 4px;
+  }
+  .textbox:hover {
+    border-color: #86b7fe;
+    box-shadow: 0 0 5px #b9d3fa;
+    outline: none;
+  }
+  .textbox:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 5px #b9d3fa;
+    outline: none;
+  }
+
+
+  button {
+    background-color:violet;
+    margin-bottom: 2px;
+  }
+  button:hover{
+    background:pink;
+  }
+  .password{
+    text-decoration: none;
+    color:blueviolet
+  }
+  .password:hover{
+    color:aqua;
+  }
+  .icon{
+    position: absolute;
+    color:darkblue;
+    padding: 3px;
+    margin-left: 2px;
+    margin-top:-2px;
+
+  }
+  .signin{
+    margin-right: 35px;
+  }
+  
+

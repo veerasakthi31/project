@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://kit.fontawesome.com/0d760670bf.js"
+    crossorigin="anonymous"
+  ></script>
+    <style>
+        body{
+    background-image: url(https://images.pexels.com/photos/3991970/pexels-photo-3991970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 3.5;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.history-container{
+    text-align: center;
+    background-color: white;
+}
+ul{
+    list-style-type: none;
+}
+p{
+    font-weight: bold;
+}
+.topnav {
+    overflow: hidden; 
+  }
+  
+  .topnav a {
+  float: right;
+    color: #f2f2f2;
+    text-align: center;
+    margin:15px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+  }
+  
+  .topnav a:hover {
+    
+    color:rgb(40, 40, 58);
+  }
+  .logo{
+    width:70px;
+    height:50px;
+   
+  }
+ .logo{
+    color:antiquewhite;
+    font-weight: bold;
+    position: absolute;
+
+   
+ }
+ .heading{
+    margin-top: -10px;
+  }
+.nav{
+    border:1px solid black;
+height:100px;
+width:100%;
+margin-top: -2px;
+margin-left: -3px;
+background-color: darkcyan;
+
+}
+.dashboard{
+    position: absolute;
+    margin-top: -70px;
+    margin-left: 55px;
+    font-size: xx-large;
+    color: #eeeeee;
+    font-weight: bolder;
+}
+.icon{
+    cursor: pointer;
+}
+.menu li{
+    list-style: none;
+    background-color:bisque;
+width:200px;
+height:80px;
+color: #eeeeee;
+margin-left:-43px;
+margin-top: -16px;
+font-size: large;
+
+padding: 0 0 0 85px;
+}
+.menu li:hover{
+    background-color: gray;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+.menu{
+    position: absolute;
+   
+    display: none;
+   
+  
+    
+}
+.menu-item li{
+    background-color: gray;
+width:200px;
+}
+
+.menuicon{
+    margin-left:-50px;
+    color: black;
+    padding: 0 45px 0 0;
+}
+
+ 
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="topnav">
+          <img src="/images/icons8-bee-65.png" alt="" />
+          
+          <span class="logo">QUIZZBEE </span>
+          <div class="dashboard">
+              <span>Dashboard</span>
+              <span class="icon"><i class="fa-solid fa-bars"></i></span>
+          </div>
+          <a class="active" href="#home">Contact us</a>
+          <a href="#news">About</a>
+          <a href="#contact">My Quizzes</a>
+          <a href="quiz.html">Home</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <div class="menu-item">
+                    <li ><span class="menuicon "><i class="fa-solid fa-house"></i></span><a href="home.html" >
+                        Home</a></li>
+                </div>
+                
+                <li> <span class="menuicon"><i class="fa-solid fa-file-circle-plus"></i>
+                </span><a href="newquiz.html">Quizzes</a></li>
+               
+                <li><span class="menuicon">
+                    <i class="fa-solid fa-book"></i>
+                    
+                </span><a href="historypage.html">History</a></li>
+                <li><span class="menuicon">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                </span><a href="adminques.html">Create new quiz</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="history-container"><p>SCORE HISTORY</p><ul id="score-history"></ul></div> 
+   
+    <script>
+        const menuIcon = document.querySelector('.icon');
+const menuItems = document.querySelector('.menu');
+
+menuIcon.addEventListener('click', function() {
+  if (menuItems.style.display === 'block') {
+    menuItems.style.display = 'none';
+  } else {
+    menuItems.style.display = 'block';
+  }
+});
+
+const scorehistoryEl = document.getElementById("score-history");
+        
+            // Retrieve score history from localStorage
+            const scoreHistory = JSON.parse(localStorage.getItem("scoreHistory1")) || [];
+        
+            // Clear existing score history elements
+            scorehistoryEl.innerHTML = "";
+        
+            // Create new score history elements for each score
+            for (let i = 0; i < scoreHistory.length; i++) {
+                const scoreData = scoreHistory[i];
+                const scoreEl = document.createElement("li");
+                scoreEl.textContent = `Score: ${scoreData.score}/3 - Date: ${scoreData.date}`;
+                scorehistoryEl.appendChild(scoreEl);
+            }
+            
+    </script>
+</body>
+</html>

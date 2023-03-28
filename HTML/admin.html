@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/login.css" />
+    <script
+      src="https://kit.fontawesome.com/0d760670bf.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="topnav">
+      <img src="/images/icons8-bee-65.png" alt="" />
+      <span class="logo">QUIZZBEE</span>
+      <a class="active" href="#home">Contact us</a>
+      <a href="login.html">Login</a>
+      <a href="#contact">My Quizzes</a>
+      <a href="quiz.html">Home</a>
+    </div>
+    <div class="welcomepage">
+      <div class="box">
+        <div class="container">
+          <form action="home.html" onsubmit="return validateForm()">
+            <section>
+              <h1>ADMIN LOGIN</h1>
+              <div>
+                <span class="icon">
+                  <i class="fa-solid fa-envelope-open-text"></i>
+                </span>
+                <input
+                  class="textbox"
+                  id="email"
+                  type="text"
+                  placeholder="Email address"
+                />
+              </div>
+              <div>
+                <span class="icon">
+                  <i class="fa-sharp fa-solid fa-lock"></i>
+                </span>
+                <input
+                  class="textbox"
+                  id="password"
+                  type="password"
+                  placeholder="Password"
+                />
+              </div>
+              <div>
+                <input type="checkbox" id="remember" />
+                <label for="remember">Remember me</label>
+              </div>
+              <div>
+                <button class="textbox" type="submit"> <span class="signin">Sign in</span> </button>
+              </div>
+              <div>
+                <a class="password" href="forgot.html">Forgot Password?</a>
+              </div>
+              <div>
+                New User? <a class="password" href="create.html">create a new account</a>
+              </div>
+             
+            </section>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="/JS/admin.js"></script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+body{
+    background-image:url(https://images.pexels.com/photos/7135116/pexels-photo-7135116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+ 
+ }
+ .container{
+    text-align: center;
+    margin-top: 300px;
+    color: antiquewhite;
+ }
+ a{
+    text-decoration: none;
+    
+ }
